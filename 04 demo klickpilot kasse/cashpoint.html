@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Cashpoint</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+<body>
+
+<div class="main-content">
+
+    <!-- Heading Box -->
+    <div class="box">
+        <div class="box-top">
+            <div></div>
+        </div>
+        <div class="box-content">
+
+            <h1>Cash Point</h1>
+
+        </div>
+        <div class="box-bottom">
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Table with Customer Box -->
+    <div class="box">
+        <div class="box-top">
+            <div>&nbsp;</div>
+        </div>
+        <div class="box-content">
+
+            <h2>Summe: <span id="betrag">5,50</span> Euro</h2>
+
+            <div class="row">
+                <div class="col gu4">
+                    Basar Number:
+                </div>
+            </div>
+            <div class="row">
+                <div class="col gu4">
+                    <input id="basarNumber" class="textField" type="text" name="basarNumber" value="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col gu4">
+                    Betrag:
+                </div>
+            </div>
+            <div class="row">
+                <div class="col gu4">
+                    <input class="textField" type="text" value="">
+                </div>
+                <div class="col gu0_5">
+                    <input type="button" value="0,50 Euro">
+                </div>
+                <div class="col gu0_5">
+                    <input type="button" value="1 Euro">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col gu4">
+                    Beschreibung:
+                </div>
+            </div>
+            <div class="row">
+                <div class="col gu4">
+                    <input class="textField" type="text" value="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col gu4">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="row">
+                <div class="col gu4 alignRight">
+                    <input type="button" value="Hinzu">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col gu4">
+                    &nbsp;
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                <tr>
+                    <td>Nr.</td>
+                    <td>Basar Nummer</td>
+                    <td>Betrag</td>
+                    <td>&nbsp;</td>
+                </tr>
+                </thead>
+
+                <tbody id="customerTableBody">
+                <tr>
+                    <td>2</td>
+                    <td>1001</td>
+                    <td>2,50 Euro</td>
+                    <td><a href="#">storno</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1001</td>
+                    <td>2,00 Euro</td>
+                    <td><a href="#">storno</a></td>
+                </tr>
+                </tbody>
+
+            </table>
+
+            <div class="row">
+                <div class="col gu4">
+                    &nbsp;
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col gu4">
+                    <input type="button" value="Bezahlen">
+                    <input type="button" value="Gesamt Storno">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col gu4">
+                    &nbsp;
+                </div>
+            </div>
+
+
+            <h2>Gewinn: <span id="Gewinn">5,50</span> Euro</h2>
+
+            <h2>Umsatz: <span id="Umsatz">5,50</span> Euro</h2>
+
+        </div>
+        <div class="box-bottom">
+            <div>&nbsp;</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

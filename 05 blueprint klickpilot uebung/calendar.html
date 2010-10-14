@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Blueprint HTML Page mit CSS Grid und BOX</title>
+
+    <link rel="stylesheet" href="css/themes/base/jquery.ui.all.css"> 
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+    <script src="js/jquery-1.4.2.js"></script> 
+    <script src="js/ui/jquery.ui.core.js"></script> 
+    <script src="js/ui/jquery.ui.widget.js"></script> 
+    <script src="js/ui/jquery.ui.datepicker.js"></script> 
+    
+    <script>
+        $(function() {
+            $( "#datepicker" ).datepicker();
+        });
+        
+        $(function() {
+            $( "#calendar" ).datepicker();
+        });
+    </script>
+    
+    
+</head>
+<body>
+
+    <div id="content">
+        
+        
+        <div class="shadow-container">
+            <div class="shadow1">
+                <div class="shadow2">
+                    <div class="shadow3">
+                        <div class="container">
+                            <h1>Kalendar Widgets - Datepicker JQuery</h1>
+                            <p>Date: <input id="datepicker" type="text"></p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <div class="shadow-container">
+            <div class="shadow1">
+                <div class="shadow2">
+                    <div class="shadow3">
+                        <div class="container">
+                            <h1>Kalendar Widget - JQuery</h1>
+                            <div id="calendar"></div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+   </div>
+
+</body>
+</html>

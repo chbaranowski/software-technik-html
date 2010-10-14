@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Bei XHTML Datein sollte man das Encoding setzen, hier ist es UTF-8, 
+     muss ganz oben in der Datei stehen. -->
+
+<!-- Die XHTML Datei muss mit einer DOCTYPE Definition beginnen -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- HTML Root Element mit XHTML Namespace -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!-- HTML Header enthält Titel, Meta Information und Deklarationen für JavaScript oder CSS Quellen -->
+<head>
+<title>Demo xhtml Page</title>
+</head>
+
+<!-- HTML Body enthält den eigentlich Inhalt des Dokuments -->
+<body>
+
+    <!-- Überschrift Level 1-->
+    <h1>Überschrift1</h1>
+    
+    <!-- Überschrift Level 2-->
+    <h2>Überschrift2</h2>
+    
+    <!-- Überschrift Level 3-->
+    <h3>Überschrift3</h3>
+
+    <h3>Absätze in HTML</h3>
+    <!-- Absatz -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+    mollit anim id est laborum.</p>
+    
+    <!-- Absatz mit Umbruch -->
+    <p>Absatz mit einem Zeilenumbruch <br /> nach Umbruch.</p>
+
+    <!-- Zitat -->
+    <h3>Zitate in HTML</h3>
+    <blockquote>
+        <p>
+            Oscar Wilde Zynismus - 
+            <i>Ein Ding zu betrachten, wie es wirklich ist, 
+            und nicht, wie es sein sollte.</i>
+        </p>
+    </blockquote>
+    
+    <!-- Präformatiertem Text -->
+    <h3>Präformatiertem Text</h3>
+    <pre>
+        @Stateless(name="Calculator", mappedName="ejb/Calculator")
+        public class CalculatorImpl implements CalculatorRemote, CalculatorLocal {
+        
+            @PersistenceContext
+            private EntityManager em;
+            
+            private Long id = new Long(1);
+            
+            public int sum(int add1, int add2) {
+                Result result = new Result();
+                result.setId(id++);
+                result.setAdd1(add1);
+                result.setAdd2(add2);
+                result.setResult(add1+add2);
+                em.persist(result);
+                
+                Query query = em.createQuery("SELECT e FROM Result e");
+                List results = query.getResultList();
+                int summe = 0;
+                for (Result r : results) {
+                    summe += r.getResult();
+                }
+                return summe;
+            }
+        
+        }
+    </pre>
+    
+    <!-- Block-Elemente -->
+    <h3>Block-Elemente erzeugen einen eigenen Absatz im Textfluss. </h3>
+    <!-- DIV markiert einen allgemeinen Bereich zur Formatierung, z.B. mit CSS -->
+    <div>
+        <b>Teil 1:</b>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+    </div>
+    <div>
+        <b>Teil 2:</b>
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+    </div>
+    
+    <!-- Trennlinie -->
+    <hr></hr>
+    
+    <!-- Inline-Elemente  -->
+    <h3>Inline-Elemente erzeugen keinen eigenen Absatz im Textfluss.</h3>
+    <div>
+        <!-- SPAN Markiert einen inline-Bereich zur Formatierung, z.B. mit CSS  -->
+        <span>
+            <b>Teil 1:</b>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        </span>
+        <span>
+            <b>Teil 2:</b>
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+        </span>
+    </div>
+    
+    <!-- Trennlinie -->
+    <hr/>
+    
+    <p>
+        <a href="http://validator.w3.org/check?uri=referer"><img
+            src="http://www.w3.org/Icons/valid-xhtml10"
+            alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+    </p>
+    
+    
+</body>
+</html>

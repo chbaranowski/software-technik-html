@@ -1,0 +1,92 @@
+#page {
+	width: 750px;
+	margin: 0 auto;
+}
+
+#menu {
+	float: right;
+	width: 245px;
+}
+
+#content {
+	width: 500px;
+	float: left;
+}
+
+ul#navlist {
+	text-align: left;
+	list-style: none;
+	padding: 0px 10px 10px 10px;
+	margin: 0 auto;
+}
+
+ul#navlist li {
+	display: block;
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+
+ul#navlist li a {
+	display: block;
+	color: #777;
+	border-bottom: solid thin;
+	text-decoration: none;
+}
+
+#navcontainer>ul#navlist li a {
+	width: auto;
+}
+
+ul#navlist li#active a {
+	background: #f0e7d7;
+	color: #800000;
+}
+
+ul#navlist li a:hover,ul#navlist li#active a:hover {
+	color: #800000;
+	background: transparent;
+	border-color: #aaab9c #fff #fff #ccc;
+	border-bottom: solid thin;
+}
+
+.shadow-container {
+	position: relative;
+	left: 3px;
+	top: 3px;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	margin-top: 20px;
+}
+
+.shadow-container .shadow2,.shadow-container .shadow3,.shadow-container .container
+	{
+	position: relative;
+	left: -1px;
+	top: -1px;
+}
+
+.shadow-container .shadow1 {
+	background: #F1F0F1;
+}
+
+.shadow-container .shadow2 {
+	background: #DBDADB;
+}
+
+.shadow-container .shadow3 {
+	background: #B8B6B8;
+}
+
+.shadow-container .container {
+	background: #ffffff;
+	border: 1px solid #848284;
+	padding: 10px;
+}
+
+h1 {
+	color: #404040;
+	font-size: 18pt;
+	font-weight: bold;
+	font-family: sans-serif;
+	border-bottom: solid thin #686868;
+}
